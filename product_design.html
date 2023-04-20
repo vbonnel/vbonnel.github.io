@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Victor Bruzeau">
+    <title>Victor Bruzeau - Senior UX / UI Designer</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    
+    <!-- Core CSS -->
+    <link href="scss/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    
+    <!-- Include header & footer -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>
+        $(function () {
+            var includes = $('[data-include]');
+            jQuery.each(includes, function () {
+                var file = 'views/' + $(this).data('include') + '.html';
+                $(this).load(file);
+            });
+        });
+    </script>
+
+    <!-- Scroll reveal / https://scrollrevealjs.org/ -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- Smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17544091-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-17544091-1');
+    </script>
+    
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHHPZXB');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body class="home">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHHPZXB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div data-include="header"></div>
+    
+    <div id="homepage">
+        <!-- Start - About section -->
+        <hr class="my-0 border-0 divider-anchor" id="about">
+        <div class="about">
+            <div class="container_home">
+                <section>
+                    <h2 class="mx-auto text-md-center">
+                        Industrial Design Work ✏️
+                    </h2>
+                        <p class="mx-auto">I'm head over heels for design, so much so that choosing between UX/UI and industrial design has always been a challenge for me. Even after a decade in the field, the question still lingers !</p>
+                        <p class="mx-auto pb-8">Though my trusty 2013 portfolio might seem like a <a href="https://www.reddit.com/r/OldSchoolCool/" target="_blank">vintage throwback</a>, it features designs that I hope will showcase the variety of my creative skills.</p>
+                    <div class="text-center">
+                        <iframe src="/assets/files/worksample_2013.pdf" width="100%" height="800px"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- End - About section -->
+        <!-- Start - Message section -->
+        <div class="border-top">
+            <div class="container_home">
+                <section class="pb-10" id="hello">
+                    <h2 class="mx-auto text-center">
+                        Let’s talk 
+                        <span class="ml-2 sayhello-f"><img data-src="assets/img/icons/waving-hand.png" class="img-icon lazyload" alt="Waving hand"></span>
+                        </h2>
+                    <p class="mx-auto text-center mb-0">If you have an idea, are interested about design or simply want to connect, feel free to reach out!</p>
+                    <p class="text-center mx-auto">
+                        <a class="btn btn-lg btn-primary messageme d-none d-sm-inline-block mt-5" target="_blank"
+                            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=contact@victorbruzeau.com&amp;su=Hey%20Victor%20!&amp;body=I'm%20reaching%20out%20to%20you%20because%20______"
+                            role="button" rel="noreferrer">Message me</a>
+                        <a class="btn btn-lg btn-primary messageme d-block d-sm-none mt-5" target="_blank"
+                            href="mailto:contact@victorbruzeau.com?&amp;subject=Hey%20Victor%20!&amp;body=I'm%20reaching%20out%20to%20you%20because%20______"
+                            role="button" rel="noreferrer">Message me</a>
+                    </p>
+                </section>
+            </div>
+        </div>
+        <!-- End - Message section -->
+        <div data-include="footer"></div>
+    </div>
+
+</body> 
+
+</html>
